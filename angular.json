@@ -19,6 +19,7 @@
                         "tsConfig": "tsconfig.app.json",
                         "assets": [],
                         "styles": [
+                            "css-tokens.css",
                             "styles.css"
                         ],
                         "scripts": []

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CdkTreeModule } from '@ptsecurity/cdk/tree';
 import { McLuxonDateModule } from '@ptsecurity/mosaic-luxon-adapter/adapter';
 import { McAutocompleteModule } from '@ptsecurity/mosaic/autocomplete';
 import { McButtonModule } from '@ptsecurity/mosaic/button';
@@ -33,8 +32,6 @@ import { McTextareaModule } from '@ptsecurity/mosaic/textarea';
 import { McTimepickerModule } from '@ptsecurity/mosaic/timepicker';
 import { McToggleModule } from '@ptsecurity/mosaic/toggle';
 import { McToolTipModule } from '@ptsecurity/mosaic/tooltip';
-import { McTreeModule } from '@ptsecurity/mosaic/tree';
-import { McTreeSelectModule } from '@ptsecurity/mosaic/tree-select';
 
 
 const MC_COMPONENTS = [
@@ -69,8 +66,6 @@ const MC_COMPONENTS = [
     McTimepickerModule,
     McToggleModule,
     McToolTipModule,
-    McTreeModule,
-    McTreeSelectModule
 ];
 
 const MC_CORE = [
@@ -83,14 +78,9 @@ const NG_MODULES = [
     ReactiveFormsModule
 ];
 
-const MATERIAL_MODULES = [
-    CdkTreeModule
-];
-
 @NgModule({
     exports: [
         ...NG_MODULES,
-        ...MATERIAL_MODULES,
         ...MC_COMPONENTS,
         ...MC_CORE
     ]
